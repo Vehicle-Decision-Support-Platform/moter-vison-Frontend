@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "Motor Vision",
+    "slug": "motor-vision-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "motorvision",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "icon": "./assets/images/icon.png",
+      "bundleIdentifier": "com.motorvision.mobile"
+    },
+    "android": {
+      "package": "com.motorvision.mobile",
+      "adaptiveIcon": {
+        "backgroundColor": "#0F151D",
+        "foregroundImage": "./assets/images/android-icon-foreground.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0F151D",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 144
+        }
+      ],
+      "expo-secure-store"
+    ],
+    "extra": {
+      "apiUrl": ""
+    },
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}

@@ -1,0 +1,3 @@
+export type PublicUser = { id: string; name: string; email: string; avatarUrl: string; providers: string[]; profile: { phone: string; district: string; bio: string } };
+export type RiskAssessmentRequest = { make: string; model: string; year: number; mileage: number; price: number; fuel?: string; transmission?: string; engine?: string; condition?: string; photoCount?: number; listingAgeDays?: number; description?: string };
+export type RiskAssessmentResponse = { risk_score: number; final_tier: 'LOW' | 'MEDIUM' | 'HIGH'; modelVersion: string; limitation: string; features: Record<string, unknown>; assessedAt: string; latencyMs: number };
